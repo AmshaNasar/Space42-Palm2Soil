@@ -123,10 +123,19 @@ unfalsifiable. See section 10.
 
 ## 5. Installation
 
-Requires **Python 3.12** (tested; 3.11 also works).
+Requires **Python 3.12 or newer**. The pinned `numpy==2.5.3` is not available
+for 3.11 or below, so an older interpreter fails at install time. Check first:
 
 ```bash
-python -m venv .venv
+python3 --version      # must report 3.12 or newer
+```
+
+On macOS the system `python3` is often 3.9, so call the version explicitly:
+
+```bash
+git clone https://github.com/AmshaNasar/Space42-Palm2Soil.git
+cd Space42-Palm2Soil
+python3.12 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
