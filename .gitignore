@@ -1,0 +1,18 @@
+# Virtual environments and caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Full scenes: 860 MB each, fetched from Planet's open archive on demand.
+# The small bundled sample under examples/input/ is committed deliberately.
+*.h5
+!examples/input/sample_cumra_128px_ortho_sr.h5
+
+# Outputs the notebook writes to the working directory on a sample run.
+# The committed full-scene results live in examples/output/.
+/parcel_table.csv
+/parcels.geojson
+/observations_joined.csv
+/observations_unmatched.csv
